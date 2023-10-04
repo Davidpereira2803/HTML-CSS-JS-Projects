@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src ="script.js"></script>
+    <title>Web Calculator</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <h1>Web Calculator</h1>
+    <p>Welcome to the Web Calculator</p>
+    <table id="calcul">
+        <tr>
+            <td colspan="3">
+                <input type="text" id="result">
+            </td>
+            <td><input type="button" value="c" onclick="empty()"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" onclick="updateResult('1')"></td>
+            <td><input type="button" value="2" onclick="updateResult('2')"></td>
+            <td><input type="button" value="3" onclick="updateResult('3')"></td>
+            <td><input type="button" value="/" onclick="updateResult('/')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" onclick="updateResult('4')"></td>
+            <td><input type="button" value="5" onclick="updateResult('5')"></td>
+            <td><input type="button" value="6" onclick="updateResult('6')"></td>
+            <td><input type="button" value="*" onclick="updateResult('*')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7" onclick="updateResult('7')"></td>
+            <td><input type="button" value="8" onclick="updateResult('8')"></td>
+            <td><input type="button" value="9" onclick="updateResult('9')"></td>
+            <td><input type="button" value="-" onclick="updateResult('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="0" onclick="updateResult('0')"></td>
+            <td><input type="button" value="." onclick="updateResult('.')"></td>
+            <td><input type="button" value="=" onclick="compute()"></td>
+            <td><input type="button" value="+" onclick="updateResult('+')"></td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>Author: David Pereira de Magalhaes</p>
+        <p>This Web calculator uses simple table in HTML to design the calculator, <br>simple CSS to enhance it and simple JavaScript to perform the actual calculations.</p>
+    </footer>
+</body>
+
+
+</html>
